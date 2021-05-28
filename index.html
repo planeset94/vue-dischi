@@ -15,7 +15,19 @@
         <header>
             <div class="container">
                 <!-- Logo spotify -->
-                <img src="./asset/img/logo.svg" alt="logo spotify">
+                <div>
+                    <img src="./asset/img/logo.svg" alt="logo spotify">
+
+                </div>
+
+                <!-- Creo il selector dei generi  -->
+                <select v-model="genereUtente" @change="genreSelection(genereUtente)">
+                    <option v-for="card in posters" :value="card.genre">{{card.genre}}
+                    </option>
+
+                </select>
+
+
             </div>
         </header>
 
@@ -24,7 +36,7 @@
             <div class="container">
 
 
-                <div class="square" v-for="card in posters">
+                <div class="square" v-for="card in posters" v-show="card.visible">
                     <div class="photo">
                         <img :src="card.poster">
                     </div>
@@ -36,7 +48,20 @@
 
 
 
+
+
+
+
+
+
+
             </div>
+
+
+
+
+
+
 
 
         </main>

@@ -3,13 +3,28 @@
     padding: 0;
     margin: 0;
 }
+
+.not-visible{
+    display: none;
+}
+
+
+
+
 header{
     background-color: #2E3A46;
     padding:1rem 0;
 }
+header .container{
+    display: flex;
+    flex-direction: column;
+   
+
+}
 header img{
 width: 120px;
 }
+
 main{
     background-color: #1E2D3B;
     padding: 5rem 0 8rem 0;
@@ -19,7 +34,7 @@ main{
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-
+    
 }
 .square{
     width: calc((100% / 6 ) - 1rem) ;
@@ -55,3 +70,11 @@ p{
     object-fit:contain;
 }
 
+
+/* ---------SELETTORE GENERI MUSICALI ------------  */
+
+select{
+    margin-top: 1rem;
+    width: 60px;
+    
+}
