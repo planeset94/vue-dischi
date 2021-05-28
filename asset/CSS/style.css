@@ -3,8 +3,16 @@
     padding: 0;
     margin: 0;
 }
+header{
+    background-color: #2E3A46;
+    padding:1rem 0;
+}
+header img{
+width: 120px;
+}
 main{
     background-color: #1E2D3B;
+    padding: 5rem 0 8rem 0;
 }
 .container{
     width: 90%;
