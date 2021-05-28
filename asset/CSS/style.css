@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+main{
+    background-color: #1E2D3B;
+}
 .container{
     width: 90%;
     margin:0 auto;
@@ -13,8 +16,8 @@
 .square{
     width: calc((100% / 6 ) - 1rem) ;
     padding:1rem; 
-    margin: 4rem 1rem 1rem  0;
-    background-color: #4355af;
+    margin: 1rem 1rem 1rem  0;
+    background-color: #2E3A46;
 }
 .square .photo{
     width: 100%;
@@ -28,12 +31,14 @@ h5,  p{
 }
 
 h5{
+    padding: 1rem 0;
     font-weight: bold;
-    font-size: 1rem;
+    color: white;
+    font-size: 1.4rem;
 }
 p{
     font-size: 90%;
-    color: #797A7F;
+    color: #687170;
 }
 
 .square .photo>img{

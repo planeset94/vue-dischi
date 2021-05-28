@@ -10,24 +10,33 @@
 </head>
 
 <body>
-
     <div id="root">
-        <div class="container">
+
+        <header>
+            <!-- Logo spotify -->
+        </header>
+
+        <main>
+
+            <div class="container">
 
 
-            <div class="square" v-for="card in posters">
-                <div class="photo">
-                    <img :src="card.poster" alt="">
+                <div class="square" v-for="card in posters">
+                    <div class="photo">
+                        <img :src="card.poster" alt="">
+                    </div>
+                    <h5>{{card.title}}</h5>
+                    <p>{{card.author}}</p>
+                    <p>{{card.year}}</p>
                 </div>
-                <h5 class="">Heavy Metal</h5>
-                <p class="">Subtitle</p>
+
+
+
+
             </div>
 
 
-
-
-        </div>
-
+        </main>
 
     </div>
 
