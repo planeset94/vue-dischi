@@ -16,13 +16,13 @@
             <div class="container">
                 <!-- Logo spotify -->
                 <div>
-                    <img src="./asset/img/logo.svg" alt="logo spotify">
+                    <img src="./asset/img/logo.png" alt="logo spotify">
 
                 </div>
 
                 <!-- Creo il selector dei generi  -->
                 <select v-model="genereUtente" @change="genreSelection(genereUtente)">
-                    <option v-for="card in posters" :value="card.genre">{{card.genre}}
+                    <option v-for="x in  arrayGenre">{{x}}
                     </option>
 
                 </select>

@@ -7,6 +7,7 @@ const app = new Vue(
         data: {
             url: "https://flynn.boolean.careers/exercises/api/array/music",
             posters: [],
+            arrayGenre: ['All'],
             genereUtente: '',
 
         },
@@ -16,7 +17,11 @@ const app = new Vue(
         methods: {
             genreSelection(genereUtente) {
                 this.posters.forEach(card => {
-                    if (card.genre.includes(genereUtente)) {
+
+                    if (genereUtente === 'All') {
+                        card.visible = true
+
+                    } else if (card.genre.includes(genereUtente)) {
                         card.visible = true
 
                     } else {
@@ -50,6 +55,14 @@ const app = new Vue(
                     this.posters.forEach(el => {
                         el.visible = true
                         // console.log(el);
+
+                        // Alimento la matrice dei generi musicali senza cloni 
+                        if (this.arrayGenre.includes(el.genre)) {
+                            console.log('non fare nulla');
+                        } else {
+                            this.arrayGenre.push(el.genre);
+
+                        }
                     })
                     // console.log(this.posters);
                 }).catch(e => {
