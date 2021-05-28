@@ -5,14 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/CSS/style.css">
     <title>Vue-Dischi</title>
 </head>
 
 <body>
 
     <div id="root">
+        <div class="container">
 
 
+            <div class="square" v-for="card in posters">
+                <div class="photo">
+                    <img :src="card.poster" alt="">
+                </div>
+                <h5 class="">Heavy Metal</h5>
+                <p class="">Subtitle</p>
+            </div>
+
+
+
+
+        </div>
 
 
     </div>
@@ -22,7 +36,7 @@
 
 
     <!-- PRIMA VUE -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- POI LA CDN DI AJAX -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"
         integrity="sha512-quHCp3WbBNkwLfYUMd+KwBAgpVukJu5MncuQaWXgCrfgcxCJAq/fo+oqrRKOj+UKEmyMCG3tb8RB63W+EmrOBg=="

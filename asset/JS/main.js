@@ -6,7 +6,7 @@ const app = new Vue(
 
         data: {
             url: "https://flynn.boolean.careers/exercises/api/array/music",
-
+            posters: [],
         },
 
 
@@ -21,12 +21,14 @@ const app = new Vue(
             axios
                 .get(this.url)
                 .then(response => {
-                    console.log(response.data);
+                    // console.log(response.data);
+                    this.posters = response.data.response
+                    // console.log(this.posters);
                 }).catch(e => {
                     console.error(e);
                 })
 
-        }
+        },
 
 
 

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.square{
+    width: calc((100% / 6 ) - 1rem) ;
+    padding:1rem; 
+    margin: 4rem 1rem 1rem  0;
+    background-color: #4355af;
+}
+.square .photo{
+    width: 100%;
+  height: auto;
+
+    
+}
+h5,  p{
+    width: 100%;
+    text-align: center;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 1rem;
+}
+p{
+    font-size: 90%;
+    color: #797A7F;
+}
+
+.square .photo>img{
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+}
+
